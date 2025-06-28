@@ -1,4 +1,4 @@
-document.getElementById("downloadBtn").addEventListener("click", () => {
+document.getElementById("downloadBtn").addEventListener("click", (FireArena BD.apk) => {
   const link = document.createElement("a");
   link.href = "FireArena BD.apk";
   link.download = "FireArenaX.apk";
