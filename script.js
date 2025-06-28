@@ -5,5 +5,5 @@ document.getElementById("downloadBtn").addEventListener("click", () => {
   document.body.appendChild(link);
   link.click();
   document.body.removeChild(link);
-  alert("   !");
+  alert("🚀 ডাউনলোড শুরু হচ্ছে!");
 });
