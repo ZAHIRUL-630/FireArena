@@ -1,466 +1,138 @@
 <!DOCTYPE html>
-<html lang="en">
-
-
-
-
-
-
-
-
-
+<html lang="bn">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Website name</title>
-    <link rel="icon" type="image/x-icon" href="mrx1.PNG">
-    <script src="https://cdn.tailwindcss.com"></script>
-    
-    <script>
-        tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                clifford: '#da373d',
-              }
-            }
-          }
-        }
-      </script>
-
-
-
-
-      
+    <title>Free Fire Tournament Download Hub</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header id="home" class="text-gray-600 body-font">
-        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+    <div class="container">
+        <header>
+            <img src="logo.png" alt="FireArena BD" class="logo">
+            <h1 class="slogan">খেলো, জিতো, রাজত্ব করো!</h1>
+        </header>
 
-          <a href="#" class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
-            <img src="assets/img/mrx1.PNG" height="30px" width="30px">
-            <!-- <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
-              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
-            </svg> -->
-            <span class="ml-3 text-xl">FireArena BD</span>
-          </a>
-          <nav class="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-400	flex flex-wrap items-center text-base justify-center">
-
-          </nav>
-
-
-          
-          <!DOCTYPE html>
-          <html lang="en">
-          <head>
-              <meta charset="UTF-8">
-              <meta name="viewport" content="width=device-width, initial-scale=1.0">
-              <title>Popup Dialog</title>
-              <style>
-                  body {
-                      font-family: Arial, sans-serif;
-                      margin: 0;
-                      padding: 0;
-                  }
-          
-                  .container {
-                      animation: fadeIn 1s ease-in-out;
-                  }
-          
-                  .overlay {
-                      position: fixed;
-                      top: 0;
-                      left: 0;
-                      width: 100%;
-                      height: 100%;
-                      background-color: rgba(0, 0, 0, 0.5);
-                      display: none;
-                      justify-content: center;
-                      align-items: center;
-                  }
-          
-                  .dialog {
-                      background-color: #fff;
-                      padding: 20px;
-                      border-radius: 10px;
-                      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-                      text-align: center;
-                      animation: fadeIn 0.3s ease-in-out; /* Animation for dialog */
-                  }
-          
-                  .download-button {
-                      background: linear-gradient(to right, #1057e6, #151da9);
-                      color: white;
-                      border: none;
-                      padding: 10px 20px;
-                      border-radius: 5px;
-                      margin-top: 10px;
-                      cursor: pointer;
-                      animation: fadeIn 1s ease-in-out;
-                  }
-          
-                  .cancel-button {
-                      background: linear-gradient(to right, #ff0000, #ff8c00);
-                      color: white;
-                      border: none;
-                      padding: 10px 20px;
-                      border-radius: 5px;
-                      margin-top: 10px;
-                      cursor: pointer;
-                      animation: fadeIn 1s ease-in-out;
-                  }
-          
-                  @keyframes fadeIn {
-                      from {
-                          opacity: 0;
-                          transform: translateY(-20px);
-                      }
-                      to {
-                          opacity: 1;
-                          transform: translateY(0);
-                      }
-                  }
-          
-                  .title-font, .font-bold, .mb-4, .justify-center {
-                      animation: fadeIn 1s ease-in-out;
-                  }
-              </style>
-          </head>
-          <body>
-              <section class="text-gray-600 body-font container">
-                  <div class="container mx-auto flex px-4 py-10 md:flex-row flex-col items-center">
-                      <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-                          <h1 class="title-font sm:text-6xl text-3xl mb-4 font-medium text-gray-900">FireArena BD</h1>
-                          <h2 class="font-bold">একটি Tournament প্লাটফর্ম অ্যাপ।</h2>
-                          <p class="mb-4">প্রতিদিন FreeFire টুর্নামেন্ট খেলে হাজার হাজার টাকা আয় করতে এখুনি ডাউনলোড করুন FireArena BD মোবাইল এপ</p>
-                          <div class="flex justify-center">
-                              <button onclick="openDialog()" class="inline-flex text-white bg-gradient-to-r from-indigo-400 to-indigo-600 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg font-bold download-button">Download App</button>
-                          </div>
-                      </div>
-                      <div class="lg:max-w-lg lg:w-fit md:w-1/2 w-5/6">
-                          <img class="object-cover object-center rounded" alt="Apps Image" src="assets/img/mrx1.PNG">
-                      </div>
-                  </div>
-              </section>
-          
-              <div class="overlay" id="overlay">
-                  <div class="dialog">
-                      <h2 class="font-bold text-xl mb-4">Terms and Conditions</h2>
-                      <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed faucibus sapien sit amet hendrerit ullamcorper.</p>
-                      <a href="FireArena BD.apk" download>
-                          <button onclick="closeDialog()" class="download-button">Download App</button>
-                      </a>
-                      <button onclick="closeDialog()" class="cancel-button">I don't agree</button>
-                  </div>
-              </div>
-          
-              <script>
-                  function openDialog() {
-                      document.getElementById('overlay').style.display = 'flex';
-                  }
-          
-                  function closeDialog() {
-                      document.getElementById('overlay').style.display = 'none';
-                  }
-              </script>
-          </body>
-          </html>
-          
-          
-        
-          
-
-        <div class="flex items-center lg:w-3/5 mx-auto border-b pb-10 mb-2 border-gray-200 sm:flex-row flex-col">
-          <div class="flex-grow sm:text-center text-center mt-6 sm:mt-0">
-            <h2 class="text-gray-900 text-lg title-font font-medium mb-3" style="font-size: 25px;">About</h2>
-            <p class="leading-relaxed text-base" style="font-size: 16px;">We support users while they face any issue with our services include gaming, wallet transactions and many more.</p>
-          </div>
-        </div>
-      </header>
-
-
-
-      <section class="text-gray-600 body-font">
-        <div class="container px-0 py-0 mx-auto">
-          
-          <div class="flex flex-wrap -m-0 text-center">
-            <div class="p-4 md:w-1/3 sm:w-1/1 w-full">
-              <div class="border-2 border-gray-200 px-4 py-6 rounded-lg">
-                <img src="https://cdn-icons-png.flaticon.com/512/892/892303.png" class="text-indigo-500 w-12 h-12 mb-3 inline-block" viewBox="0 0 24 24">
-              </img>
-                <h2 class="title-font font-medium text-3xl text-gray-900">200</h2>
-                <p class="leading-relaxed">Downloads</p>
-              </div>
-            </div>
-            <div class="p-4 md:w-1/3 sm:w-1/2 w-full">
-              <div class="border-2 border-gray-200 px-4 py-6 rounded-lg">
-                <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" class="text-indigo-500 w-12 h-12 mb-3 inline-block" viewBox="0 0 24 24">
-              </img>
-                <h2 class="title-font font-medium text-3xl text-gray-900">200</h2>
-                <p class="leading-relaxed">Users</p>
-              </div>
-            </div>
-            <div class="p-4 md:w-1/3 sm:w-1/2 w-full">
-              <div class="border-2 border-gray-200 px-4 py-6 rounded-lg">
-                <img src="https://icon-library.com/images/gamepad-icon-png/gamepad-icon-png-5.jpg" class="text-indigo-500 w-12 h-12 mb-3 inline-block" viewBox="0 0 24 24">
-              </img>
-                <h2 class="title-font font-medium text-3xl text-gray-900">400</h2>
-                <p class="leading-relaxed">Buyer</p>
-              </div>
+        <main>
+            <div class="tournament-info">
+                <h2>Booyah Vaul 2025</h2>
+                <div class="info-grid">
+                    <div class="info-item">
+                        <h3>প্রতিদিন ফ্রি ফায়ার টুর্নামেন্ট হয়</h3>
+                        <p>জয় করুন পুরস্কার!</p>
+                    </div>
+                    <div class="info-item">
+                        <h3>প্রতিটি ম্যাচে আলাদা প্রাইজ পুল</h3>
+                        <p>আপনার দক্ষতা অনুযায়ী খেলুন।</p>
+                    </div>
+                    <div class="info-item">
+                        <h3>গেম খেলুন, অভিজ্ঞতা কাজে লাগান</h3>
+                        <p>রিয়েল টাকা ইনকাম করুন!</p>
+                    </div>
+                </div>
             </div>
 
+            <div class="download-section">
+                <h2>Booyah Vaul টুর্নামেন্ট অ্যাপ ডাউনলোড করুন</h2>
+                <p>অংশগ্রহণ করতে অফিসিয়াল টুর্নামেন্ট অ্যাপ ডাউনলোড করুন</p>
+                <button id="downloadBtn" class="download-button">
+                    <span class="button-text">ডাউনলোড করুন</span>
+                    <span class="button-icon"></span>
+                </button>
             </div>
-          </div>
-        </div>
-      </section>
 
-
-
-
-
-
-
-
-
-      <section class="text-gray-600 body-font">
-        
-            
-          </div>
-          <div class="flex items-center lg:w-3/5 mx-auto border-b pb-10 mb-10 border-gray-200 sm:flex-row flex-col">
-            <div class="flex-grow sm:text-left text-center mt-6 sm:mt-0">
-              <h2 class="text-gray-900 text-lg title-font font-medium mb-2">Customer Support</h2>
-              <p class="leading-relaxed text-base">We support users while they face any issue with our services include gaming, wallet transactions and many more.</p>
-
+            <div class="rules-section">
+                <h2>টুর্নামেন্টের নিয়মাবলি</h2>
+                <div class="rules-grid">
+                    <div class="rule-item">
+                        <h3>১. রেজিস্ট্রেশন</h3>
+                        <p>অ্যাপ ডাউনলোড করে রেজিস্ট্রেশন সম্পূর্ণ করুন</p>
+                    </div>
+                    <div class="rule-item">
+                        <h3>২. দল গঠন</h3>
+                        <p>১/২/৪ জন খেলোয়াড় নিয়ে দল গঠন করুন</p>
+                    </div>
+                    <div class="rule-item">
+                        <h3>৩. স্লট বুকিং</h3>
+                        <p>টুর্নামেন্টের স্লট বুক করুন</p>
+                    </div>
+                    <div class="rule-item">
+                        <h3>৪. খেলার সময়</h3>
+                        <p>নির্ধারিত সময়ে লবিতে জয়েন করুন</p>
+                    </div>
+                </div>
             </div>
-            <div class="sm:w-32 sm:order-none order-first sm:h-32 h-20 w-20 sm:ml-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 flex-shrink-0">
-              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="sm:w-16 sm:h-16 w-10 h-10" viewBox="0 0 24 24">
-                
-                <circle cx="12" cy="7" r="4"></circle>
-                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
-              </svg>
+
+            <div class="screenshots-section">
+                <h2>গেম স্ক্রিনশট</h2>
+                <div class="screenshots-grid">
+                    <div class="screenshot-item">
+                        <div class="screenshot-overlay">
+                            <img src="photo1.jpg" alt="Free Fire Tournament Screenshot 1" loading="lazy">
+                            <div class="screenshot-text">
+                                <h3>টুর্নামেন্ট লবি</h3>
+                                <p>প্রতিযোগিতার জন্য প্রস্তুত হন</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="screenshot-item">
+                        <div class="screenshot-overlay">
+                            <img src="photo2.jpg" alt="Free Fire Tournament Screenshot 2" loading="lazy">
+                            <div class="screenshot-text">
+                                <h3>ম্যাচ প্লে</h3>
+                                <p>আকর্ষণীয় গেমপ্লে অপেক্ষা করছে</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="screenshot-item">
+                        <div class="screenshot-overlay">
+                            <img src="photo3.jpg" alt="Free Fire Tournament Screenshot 3" loading="lazy">
+                            <div class="screenshot-text">
+                                <h3>পুরস্কার</h3>
+                                <p>আকর্ষণীয় পুরস্কার জিতুন</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="flex items-center lg:w-3/5 mx-auto sm:flex-row flex-col">
-            <div class="sm:w-32 sm:h-32 h-20 w-20 sm:mr-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 flex-shrink-0">
-              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="sm:w-16 sm:h-16 w-10 h-10" viewBox="0 0 24 24">
-                <path d="M7 15h0M2 9.5h20"/>
-                <rect x="2" y="4" width="20" height="16" rx="2"/>
-              </svg>
+        </main>
+
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="logo.png" alt="Booyah Vaul" class="footer-logo-img">
+                        <h3>Booyah Vault</h3>
+                    </div>
+                    <p class="footer-description">বাংলাদেশের সবচেয়ে বড় Free Fire টুর্নামেন্ট প্ল্যাটফর্ম</p>
+                </div>
+
+                <div class="footer-section">
+                    <h4>যোগাযোগ করুন</h4>
+                    <div class="contact-info">
+                        <p><i class="fas fa-envelope"></i> developer420ad@gmail.com</p>
+                        <p><i class="fas fa-phone"></i>+8801316572813</p>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h4>সোশ্যাল মিডিয়া</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-discord"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-telegram"></i></a>
+                    </div>
+                </div>
             </div>
-            <div class="flex-grow sm:text-left text-center mt-6 sm:mt-0">
-              <h2 class="text-gray-900 text-lg title-font font-medium mb-2">Best Pricing</h2>
-              <p class="leading-relaxed text-base">We host tournaments in best and profitable pricing for our reputed useres. So our users will get support to improve their scale of earning.</p>
 
+            <div class="footer-bottom">
+                <p class="copyright">২০২৫ Free Fire Tournament</p>
             </div>
-          </div>
-         <!-- <button class="flex mx-auto mt-20 text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">Button</button> -->
-        </div>
-      </section>
-
-  <hr>
-
-
-
-  
-  <!DOCTYPE html>
-  <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Enhanced Stats Section</title>
-    <style>
-      /* Additional CSS for enhanced styling */
-      body {
-        margin: 0;
-        padding: 0;
-        font-family: Arial, sans-serif;
-      }
-  
-      .stats-section {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: #ffffff;
-        padding: 10px 0;
-      }
-  
-      .stats-item {
-        margin: 0 10px;
-        text-align: center;
-        transition: transform 0.3s ease;
-        background-color: rgba(245, 242, 242, 0.8);
-        border-radius: 10px;
-        padding: 20px;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-      }
-  
-      .stats-item:hover {
-        transform: translateY(-5px);
-      }
-  
-      .stats-item img {
-        width: 80px;
-        height: 80px;
-        margin-bottom: 10px;
-      }
-  
-      .stats-item h2 {
-        font-size: 2.5rem;
-        color: #333;
-        margin: 0;
-      }
-  
-      .stats-item p {
-        color: #666;
-        margin: 0;
-      }
-    </style>
-  </head>
-  <body>
-    <section class="stats-section">
-      <div class="stats-item">
-        <img src="https://cdn-icons-png.flaticon.com/512/892/892303.png" alt="Downloads Icon">
-        <h2>200</h2>
-        <p>Downloads</p>
-      </div>
-      <div class="stats-item">
-        <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="Users Icon">
-        <h2>200</h2>
-        <p>Users</p>
-      </div>
-      <div class="stats-item">
-        <img src="https://icon-library.com/images/gamepad-icon-png/gamepad-icon-png-5.jpg" alt="Buyer Icon">
-        <h2>400</h2>
-        <p>Buyer</p>
-      </div>
-    </section>
-  </body>
-  </html>
-  
-
-  <!DOCTYPE html>
-  <html lang="en">
-  <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>App Screenshot Gallery</title>
-      <style>
-          body {
-              font-family: Arial, sans-serif;
-              margin: 0;
-              padding: 0;
-              background-color: #fff;
-          }
-          .screenshots-container {
-              overflow-x: auto;
-              overflow-y: hidden;
-              white-space: nowrap;
-              padding: 20px;
-              text-align: center;
-          }
-          .app-screenshot {
-              width: 250px;
-              height: 370px;
-              border: 1px solid #ddd;
-              border-radius: 10px;
-              overflow: hidden;
-              box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-              margin-right: 20px;
-              position: relative;
-              animation: fadeIn 1s ease;
-              display: inline-block;
-              cursor: pointer;
-          }
-          .app-screenshot img {
-              width: 100%;
-              height: 100%;
-              object-fit: cover;
-              transition: transform 0.3s ease;
-          }
-          .app-screenshot img:hover {
-              transform: scale(1.1);
-          }
-          @keyframes fadeIn {
-              from {
-                  opacity: 0;
-                  transform: translateY(-20px);
-              }
-              to {
-                  opacity: 1;
-                  transform: translateY(0);
-              }
-          }
-      </style>
-  </head>
-  <body>
-      <div class="screenshots-container">
-          <div class="app-screenshot" onclick="zoom(this)">
-              <img src="assets/img/screenshot1.jpg" alt="App Screenshot 1">
-          </div>
-          <div class="app-screenshot" onclick="zoom(this)">
-              <img src="assets/img/screenshot2.jpg" alt="App Screenshot 2">
-          </div>
-          <div class="app-screenshot" onclick="zoom(this)">
-              <img src="assets/img/screenshot3.jpg" alt="App Screenshot 3">
-          </div>
-          <div class="app-screenshot" onclick="zoom(this)">
-              <img src="assets/img/screenshot4.jpg" alt="App Screenshot 4">
-          </div>
-          <div class="app-screenshot" onclick="zoom(this)">
-              <img src="assets/img/screenshot5.jpg" alt="App Screenshot 5">
-          </div>
-      </div>
-  
-      <script>
-          function zoom(element) {
-              element.querySelector("img").style.transform = "scale(1.5)";
-              element.querySelector("img").style.transition = "transform 0.3s ease";
-          }
-      </script>
-  </body>
-  </html>
-
-
-
-
-<hr>
-
-<footer class="text-gray-600 body-font">
-  <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
-    <a href="https://t.me/your" class="flex title-font font-high items-center md:justify-start justify-center text-gray-900">
-      <img src="assets/img/developer.png"
-      
-      
-      height="30px" width="30px">
-      <span class="ml-3 text-xl">Your Developer</span>
-    </a>
-    <p class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">© 2024 | Developed by
-      <a href="https://t.me/Your" class="text-gray-600 ml-1" rel="noopener noreferrer" target="_blank">Your Developer</a>
-    </p>
-    <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
-      <!-- <a class="text-gray-500">
-        <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-          <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
-        </svg>
-      </a>
-      <a class="ml-3 text-gray-500">
-        <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-          <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
-        </svg>
-      </a>
-      <a class="ml-3 text-gray-500">
-        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-          <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
-          <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
-        </svg>
-      </a> -->
-      <a href="#home" class="ml-5 text-gray-500">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="gray" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M16 12l-4-4-4 4M12 16V9"/></svg>
-      </a>
-    </span>
-  </div>
-</footer>
+        </footer>
+    </div>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="script.js"></script>
 </body>
 </html>
-
