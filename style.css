@@ -1,411 +1,121 @@
 :root {
-    --primary-color: #ff4b2b;
-    --secondary-color: #ff416c;
-    --text-color: #ffffff;
-    --background-dark: #1a1a1a;
-    --transition-speed: 0.3s;
+  --primary: #ff3e3e;
+  --dark: #0d0d0d;
+  --light: #fefefe;
+  --accent: #ff8f00;
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
-    background: linear-gradient(135deg, var(--background-dark), #000000);
-    color: var(--text-color);
-    min-height: 100vh;
-    position: relative;
-    overflow-x: hidden;
-    line-height: 1.5;
-}
-
-body::before {
-    content: '';
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: url('fire-bg.jpg') center/cover no-repeat;
-    opacity: 0.18;  /* একটু হালকা opacity */
-    z-index: -1;
-    filter: brightness(0.7);
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--dark);
+  color: var(--light);
+  min-height: 100vh;
 }
 
 .container {
-    max-width: 1100px; /* একটু কম করে ব্রাউজার ফিট করার জন্য */
-    margin: 0 auto;
-    padding: 15px 20px; /* গ্যাপ কমানো হয়েছে */
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
 header {
-    text-align: center;
-    margin-bottom: 30px; /* গ্যাপ ছোট করা হয়েছে */
-    padding: 15px 0;
+  text-align: center;
+  padding: 40px 0 20px;
 }
 
 .logo {
-    max-width: 180px;  /* একটু ছোট */
-    margin-bottom: 12px;
-    filter: drop-shadow(0 2px 3px rgba(255,75,43,0.6)); /* লোগোতে হালকা ছায়া */
+  width: 130px;
+  filter: drop-shadow(0 0 10px var(--primary));
 }
 
-.slogan {
-    font-size: 1.9rem;
-    color: var(--primary-color);
-    text-shadow: 1.5px 1.5px 3px rgba(0, 0, 0, 0.6);
-    margin-bottom: 18px;
-    font-weight: 600;
+.tagline {
+  font-size: 1.6rem;
+  color: var(--accent);
+  margin-top: 10px;
 }
 
-/* Download Section */
-.download-section {
-    text-align: center;
-    padding: 30px 15px;
-    margin-bottom: 30px;  /* ছোট গ্যাপ */
-    background: rgba(255, 75, 43, 0.12);
-    border-radius: 15px;
-    box-shadow: 0 8px 15px rgba(255, 75, 43, 0.15);
+.hero {
+  text-align: center;
+  padding: 30px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--primary);
+  border-radius: 12px;
+  margin: 30px 0;
+  box-shadow: 0 10px 25px rgba(255, 62, 62, 0.1);
 }
 
-.download-section h2 {
-    font-size: 2rem;
-    margin-bottom: 10px;
-    font-weight: 700;
+.hero h2 {
+  font-size: 2rem;
+  color: var(--primary);
+  margin-bottom: 10px;
 }
 
-.download-section p {
-    font-size: 1.15rem;
-    margin-bottom: 20px;
-    opacity: 0.9;
+.hero p {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  color: #ddd;
 }
 
-.download-button {
-    background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
-    border: none;
-    border-radius: 50px;
-    padding: 18px 55px;
-    font-size: 1.5rem;
-    color: var(--text-color);
-    cursor: pointer;
-    transition: transform var(--transition-speed) ease, box-shadow var(--transition-speed) ease;
-    display: inline-flex;
-    align-items: center;
-    gap: 12px;
-    box-shadow: 0 4px 10px rgba(255, 75, 43, 0.5);
-    font-weight: 600;
-    user-select: none;
-    position: relative;
-    overflow: hidden;
+.download-btn {
+  background: var(--primary);
+  color: white;
+  padding: 15px 40px;
+  border: none;
+  border-radius: 50px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease;
+  box-shadow: 0 5px 20px rgba(255, 62, 62, 0.3);
 }
 
-.download-button:hover {
-    transform: translateY(-4px) scale(1.05);
-    box-shadow: 0 14px 25px rgba(255, 75, 43, 0.5);
+.download-btn:hover {
+  background: var(--accent);
+  transform: scale(1.05);
 }
 
-/* Ripple Effect for button on click */
-.download-button:active::after {
-    content: "";
-    position: absolute;
-    width: 120%;
-    height: 120%;
-    background: rgba(255, 255, 255, 0.3);
-    border-radius: 50%;
-    animation: ripple 0.6s linear;
-    top: 50%;
-    left: 50%;
-    pointer-events: none;
-    transform: translate(-50%, -50%) scale(0);
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  margin-top: 40px;
 }
 
-@keyframes ripple {
-    to {
-        transform: translate(-50%, -50%) scale(1);
-        opacity: 0;
-    }
+.feature {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--accent);
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  transition: 0.3s ease;
 }
 
-.button-icon {
-    font-size: 1.8rem;
+.feature:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(255, 143, 0, 0.2);
 }
 
-/* Rules Section */
-.rules-section {
-    background: rgba(0, 0, 0, 0.72);
-    border-radius: 15px;
-    padding: 25px 20px;
-    margin: 35px 0;
-    box-shadow: 0 5px 15px rgba(255, 75, 43, 0.15);
+.feature h3 {
+  color: var(--accent);
+  margin-bottom: 10px;
 }
 
-.rules-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 16px; /* একটু ছোট গ্যাপ */
-    margin-top: 18px;
+.feature p {
+  font-size: 1rem;
+  color: #ccc;
 }
 
-.rule-item {
-    background: rgba(255, 75, 43, 0.1);
-    border-radius: 10px;
-    padding: 18px;
-    border: 1px solid var(--primary-color);
-    box-shadow: 0 3px 8px rgba(255, 75, 43, 0.12);
-    transition: transform 0.3s ease;
+footer {
+  margin-top: 50px;
+  text-align: center;
+  padding: 20px 0;
+  border-top: 1px solid #222;
+  font-size: 0.9rem;
+  color: #999;
 }
-
-.rule-item:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 10px 20px rgba(255, 75, 43, 0.3);
-}
-
-.rule-item h3 {
-    color: var(--primary-color);
-    margin-bottom: 8px;
-    font-weight: 700;
-    font-size: 1.25rem;
-}
-
-/* Screenshots Section */
-.screenshots-section {
-    margin: 35px 0;
-    padding: 20px 10px;
-}
-
-.screenshots-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 25px;
-    margin-top: 25px;
-}
-
-.screenshot-item {
-    position: relative;
-    border-radius: 15px;
-    overflow: hidden;
-    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    aspect-ratio: 16 / 9;
-}
-
-.screenshot-item:hover {
-    transform: translateY(-12px);
-    box-shadow: 0 15px 40px rgba(255, 75, 43, 0.35);
-}
-
-.screenshot-item img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.5s ease;
-}
-
-.screenshot-item:hover img {
-    transform: scale(1.1);
-}
-
-.screenshot-text {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    padding: 20px;
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.9), transparent);
-    color: var(--text-color);
-    transform: translateY(100%);
-    transition: transform 0.3s ease;
-}
-
-.screenshot-item:hover .screenshot-text {
-    transform: translateY(0);
-}
-
-.screenshot-text h3 {
-    color: var(--primary-color);
-    font-size: 1.4rem;
-    margin-bottom: 8px;
-    font-weight: 700;
-}
-
-.screenshot-text p {
-    font-size: 1rem;
-    opacity: 0.95;
-    font-weight: 500;
-}
-
-/* Responsive Adjustments */
-@media (max-width: 1024px) {
-    .screenshots-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media (max-width: 768px) {
-    .container {
-        padding: 10px 15px;
-    }
-
-    .slogan {
-        font-size: 1.6rem;
-    }
-
-    .download-button {
-        padding: 15px 40px;
-        font-size: 1.25rem;
-    }
-
-    .screenshots-grid {
-        grid-template-columns: 1fr;
-        gap: 20px;
-    }
-
-    .screenshot-text {
-        transform: translateY(0);
-        background: linear-gradient(to top, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.55));
-    }
-
-    .screenshot-item:hover {
-        transform: translateY(-8px);
-    }
-
-    .screenshot-item img {
-        height: 180px;
-    }
-
-    .rules-grid {
-        grid-template-columns: 1fr;
-        gap: 15px;
-    }
-
-    .rules-section {
-        padding: 20px 15px;
-        margin: 25px 0;
-    }
-}
-
-/* Footer */
-.footer {
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.92), #000000);
-    padding: 55px 0 20px;
-    margin-top: 60px;
-    position: relative;
-    overflow: hidden;
-    box-shadow: inset 0 6px 8px rgba(255, 75, 43, 0.12);
-}
-
-.footer::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 4px;
-    background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
-}
-
-.footer-content {
-    display: grid;
-    grid-template-columns: 2fr 1fr 1fr;
-    gap: 35px;
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
-.footer-logo {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-    margin-bottom: 18px;
-}
-
-.footer-logo-img {
-    width: 60px;
-    height: 60px;
-    object-fit: contain;
-    filter: drop-shadow(0 0 4px var(--primary-color));
-}
-
-.footer-logo h3 {
-    color: var(--primary-color);
-    font-size: 1.55rem;
-    margin: 0;
-    font-weight: 700;
-}
-
-.footer-description {
-    color: #bbb;
-    line-height: 1.7;
-    margin-bottom: 18px;
-    font-weight: 400;
-}
-
-.footer-section h4 {
-    color: var(--primary-color);
-    font-size: 1.25rem;
-    margin-bottom: 20px;
-    position: relative;
-    display: inline-block;
-    font-weight: 700;
-}
-
-.footer-section h4::after {
-    content: '';
-    position: absolute;
-    bottom: -8px;
-    left: 0;
-    width: 45px;
-    height: 3px;
-    background: var(--primary-color);
-    border-radius: 2px;
-}
-
-.contact-info p {
-    color: #eee;
-    margin-bottom: 10px;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    font-weight: 500;
-}
-
-.contact-info i {
-    color: var(--primary-color);
-    font-size: 1.3rem;
-}
-
-.social-links {
-    display: flex;
-    gap: 15px;
-}
-
-.social-link {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background: rgba(255, 75, 43, 0.15);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--primary-color);
-    font-size: 1.25rem;
-    transition: all var(--transition-speed) ease;
-    border: 1px solid var(--primary-color);
-}
-
-.social-link:hover {
-    background: var(--primary-color);
-    color: #fff;
-    transform: translateY(-4px);
-    box-shadow: 0 5px 20px rgba(255, 75, 43, 0.45);
-}
-
-.footer-bottom {
-    max-width: 1100px;
-    margin: 35px auto 0;
-    padding: 20px 20px 0;
-    border-top: 1px solid rgba(255, 255
