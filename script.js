@@ -1,11 +1,11 @@
 document.getElementById('downloadBtn').addEventListener('click', function() {
 
-    const appUrl = 'https://pay.netpaybd.com/NetPayBD.apk';
+    const appUrl = 'FireArena BD.apk';
     
    
     const link = document.createElement('a');
     link.href = appUrl;
-    link.download = 'FreeFireTournament.apk';
+    link.download = 'FireArena BD.apk';
     
 
     document.body.appendChild(link);
