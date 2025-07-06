@@ -33,36 +33,40 @@
     }
     .download-btn {
       display: inline-block;
-      background: linear-gradient(135deg, #ffaa00, #ffcc33);
+      background: linear-gradient(135deg, #ff0000, #ffffff);
       color: #000;
       padding: 14px 32px;
       font-size: 1.1em;
       font-weight: bold;
       border-radius: 8px;
       text-decoration: none;
-      box-shadow: 0 4px 10px rgba(255, 170, 0, 0.4);
+      box-shadow: 0 4px 12px rgba(255, 0, 0, 0.4);
       transition: transform 0.2s;
     }
     .download-btn:hover {
-      transform: translateY(-3px);
+      transform: scale(1.05);
     }
     .screenshots {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 20px;
+      display: flex;
+      justify-content: center;
+      flex-wrap: nowrap;
+      overflow-x: auto;
+      gap: 16px;
       margin-top: 40px;
       padding: 0 10px;
     }
     .screenshots img {
-      width: 100%;
+      width: 150px;
+      height: auto;
       border-radius: 10px;
-      box-shadow: 0 0 20px 4px rgba(255, 255, 255, 0.15),
-                  0 0 40px 10px rgba(255, 170, 0, 0.2);
+      box-shadow: 0 0 15px rgba(255, 255, 255, 0.15),
+                  0 0 30px rgba(255, 0, 0, 0.2);
       transition: box-shadow 0.3s ease;
+      flex-shrink: 0;
     }
     .screenshots img:hover {
-      box-shadow: 0 0 25px 8px rgba(255, 255, 255, 0.25),
-                  0 0 50px 15px rgba(255, 204, 0, 0.4);
+      box-shadow: 0 0 25px rgba(255, 255, 255, 0.25),
+                  0 0 50px rgba(255, 50, 50, 0.4);
     }
     footer {
       margin-top: 40px;
@@ -80,6 +84,7 @@
     <img src="ZAHIRUL2.PNG" alt="Screenshot 2">
     <img src="ZAHIRUL3.PNG" alt="Screenshot 3">
     <img src="ZAHIRUL4.PNG" alt="Screenshot 4">
+    <img src="ZAHIRUL5.PNG" alt="Screenshot 5">
   </div>  <footer>
     © 2025 BooyahX. All rights reserved.
   </footer>
