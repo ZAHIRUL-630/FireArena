@@ -56,7 +56,13 @@
     .screenshots img {
       width: 100%;
       border-radius: 10px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.6);
+      box-shadow: 0 0 20px 4px rgba(255, 255, 255, 0.15),
+                  0 0 40px 10px rgba(255, 170, 0, 0.2);
+      transition: box-shadow 0.3s ease;
+    }
+    .screenshots img:hover {
+      box-shadow: 0 0 25px 8px rgba(255, 255, 255, 0.25),
+                  0 0 50px 15px rgba(255, 204, 0, 0.4);
     }
     footer {
       margin-top: 40px;
