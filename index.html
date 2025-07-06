@@ -17,6 +17,7 @@
       text-align: center;
       padding: 0;
       overflow-x: hidden;
+      scroll-behavior: smooth;
     }
     .header-section {
       padding: 20px 0 10px;
@@ -58,6 +59,10 @@
       gap: 10px;
       padding: 0 10px;
       margin-top: 10px;
+      scroll-behavior: smooth;
+    }
+    .screenshots::-webkit-scrollbar {
+      display: none;
     }
     .screenshots img {
       width: 160px;
@@ -84,6 +89,16 @@
       margin-bottom: 10px;
       color: #aaa;
     }
+    #vscroll1, #hscroll1 {
+      scroll-behavior: smooth;
+      overflow: auto;
+      scrollbar-width: none;
+      -ms-overflow-style: none;
+    }
+    #vscroll1::-webkit-scrollbar,
+    #hscroll1::-webkit-scrollbar {
+      display: none;
+    }
   </style>
 </head>
 <body>
@@ -91,10 +106,10 @@
     <img src="ZAHIRUL.PNG" alt="BooyahX Logo" class="logo">
     <h1>BooyahX FreeFire & Ludo Tournament</h1>
     <a href="BooyahX.apk" class="download-btn"> Download Now</a>
-  </div>  <div class="screenshots">
+  </div>  <div id="hscroll1" class="screenshots">
     <img src="ZAHIRUL1.PNG" alt="Screenshot 1">
-    <img src="ZAHIRUL2.PNG" alt="Screenshot 2">
-    <img src="ZAHIRUL3.PNG" alt="Screenshot 3">
+    <img src="ZAHIRUL2.PNG alt="Screenshot 2">
+    <img src="ZAHIRUL3 PNG" alt="Screenshot 3">
     <img src="ZAHIRUL4.PNG" alt="Screenshot 4">
     <img src="ZAHIRUL5.PNG" alt="Screenshot 5">
   </div>  <footer>
@@ -103,6 +118,18 @@
        +8801856591506
     </div>
     © 2025 BooyahX. All rights reserved.
-  </footer>
-</body>
+  </footer>  <script>
+    function _removeScollBar(id) {
+      const el = document.getElementById(id);
+      if (el) {
+        el.style.overflow = 'auto';
+        el.style.scrollbarWidth = 'none';
+        el.style.msOverflowStyle = 'none';
+        el.style.scrollBehavior = 'smooth';
+      }
+    }
+
+    _removeScollBar("vscroll1");
+    _removeScollBar("hscroll1");
+  </script></body>
 </html>
