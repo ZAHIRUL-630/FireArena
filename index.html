@@ -10,12 +10,13 @@
       padding: 0;
       box-sizing: border-box;
     }
-    body {
+    html, body {
       font-family: 'Poppins', sans-serif;
-      background: #0f0f0f;
-      color: #fff;
+      background: #121212;
+      color: #f5f5f5;
       text-align: center;
       padding: 20px;
+      overflow-x: hidden;
     }
     .logo {
       margin: 20px auto;
@@ -23,7 +24,7 @@
     }
     h1 {
       font-size: 2.5em;
-      color: #ffaa00;
+      color: #00f0ff;
       margin-top: 10px;
     }
     p {
@@ -33,58 +34,58 @@
     }
     .download-btn {
       display: inline-block;
-      background: linear-gradient(135deg, #ff0000, #ffffff);
-      color: #000;
+      background: linear-gradient(135deg, #ff416c, #ff4b2b);
+      color: #fff;
       padding: 14px 32px;
       font-size: 1.1em;
       font-weight: bold;
-      border-radius: 8px;
+      border-radius: 10px;
       text-decoration: none;
-      box-shadow: 0 4px 12px rgba(255, 0, 0, 0.4);
-      transition: transform 0.2s;
+      box-shadow: 0 4px 12px rgba(255, 65, 108, 0.4);
+      transition: all 0.3s ease;
     }
     .download-btn:hover {
       transform: scale(1.05);
+      box-shadow: 0 6px 20px rgba(255, 75, 43, 0.6);
     }
     .screenshots {
       display: flex;
       justify-content: center;
-      flex-wrap: nowrap;
-      overflow-x: auto;
+      flex-wrap: wrap;
       gap: 16px;
       margin-top: 40px;
       padding: 0 10px;
     }
     .screenshots img {
-      width: 150px;
+      width: 160px;
       height: auto;
-      border-radius: 10px;
-      box-shadow: 0 0 15px rgba(255, 255, 255, 0.15),
-                  0 0 30px rgba(255, 0, 0, 0.2);
-      transition: box-shadow 0.3s ease;
-      flex-shrink: 0;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(0, 255, 255, 0.2),
+                  0 0 40px rgba(255, 65, 108, 0.3);
+      transition: box-shadow 0.3s ease, transform 0.3s ease;
     }
     .screenshots img:hover {
-      box-shadow: 0 0 25px rgba(255, 255, 255, 0.25),
-                  0 0 50px rgba(255, 50, 50, 0.4);
+      box-shadow: 0 0 30px rgba(0, 255, 255, 0.3),
+                  0 0 60px rgba(255, 65, 108, 0.5);
+      transform: translateY(-4px);
     }
     footer {
       margin-top: 40px;
       font-size: 0.9em;
-      color: #777;
+      color: #888;
     }
   </style>
 </head>
 <body>
-  <img src="BooyahX.png" alt="BooyahX" class="logo">
+  <img src="booyahx-logo.png" alt="BooyahX Logo" class="logo">
   <h1>BooyahX v1.4</h1>
   <p>  ,       !<br>     Free Fire  !</p>
   <a href="https://your-download-link.com" class="download-btn"> Download Now</a>  <div class="screenshots">
-    <img src="ZAHIRUL1.PNG" alt="Screenshot 1">
-    <img src="ZAHIRUL2.PNG" alt="Screenshot 2">
-    <img src="ZAHIRUL3.PNG" alt="Screenshot 3">
-    <img src="ZAHIRUL4.PNG" alt="Screenshot 4">
-    <img src="ZAHIRUL5.PNG" alt="Screenshot 5">
+    <img src="screenshot1.jpg" alt="Screenshot 1">
+    <img src="screenshot2.jpg" alt="Screenshot 2">
+    <img src="screenshot3.jpg" alt="Screenshot 3">
+    <img src="screenshot4.jpg" alt="Screenshot 4">
+    <img src="screenshot5.jpg" alt="Screenshot 5">
   </div>  <footer>
     © 2025 BooyahX. All rights reserved.
   </footer>
