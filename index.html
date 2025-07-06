@@ -1,9 +1,9 @@
 <!DOCTYPE html><html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>BooyahX - Premium Free Fire Tournament App</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BooyahX - Download</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <style>
     * {
       margin: 0;
@@ -12,111 +12,70 @@
     }
     body {
       font-family: 'Poppins', sans-serif;
-      background: #0b0b0c;
+      background: #0f0f0f;
       color: #fff;
-      line-height: 1.6;
-    }
-    header {
-      background: #141414;
-      padding: 24px 48px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      box-shadow: 0 2px 12px rgba(255, 153, 0, 0.2);
+      text-align: center;
+      padding: 20px;
     }
     .logo {
-      display: flex;
-      align-items: center;
+      margin: 20px auto;
+      width: 100px;
     }
-    .logo img {
-      height: 55px;
-      margin-right: 12px;
-    }
-    .logo span {
-      font-size: 2em;
-      font-weight: 700;
+    h1 {
+      font-size: 2.5em;
       color: #ffaa00;
-      letter-spacing: 1px;
+      margin-top: 10px;
     }
-    .hero {
-      height: 92vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      background: url('https://i.imgur.com/JBkMSAg.jpg') center/cover no-repeat;
-      position: relative;
-    }
-    .hero::after {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: rgba(0, 0, 0, 0.75);
-    }
-    .hero-content {
-      position: relative;
-      z-index: 2;
-      padding: 0 20px;
-    }
-    .hero-content h1 {
-      font-size: 3.8em;
-      margin-bottom: 20px;
-      color: #ffaa00;
-      letter-spacing: 1.2px;
-      text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
-    }
-    .hero-content p {
-      font-size: 1.25em;
-      margin-bottom: 35px;
-      color: #ddd;
-      max-width: 600px;
-      margin-left: auto;
-      margin-right: auto;
-      line-height: 1.8;
+    p {
+      font-size: 1.1em;
+      color: #ccc;
+      margin: 10px 0 30px;
     }
     .download-btn {
-      background: linear-gradient(145deg, #ffaa00, #ffcc33);
-      padding: 16px 38px;
-      border: none;
-      color: #1a1a1a;
-      font-weight: 700;
-      font-size: 1.15em;
-      border-radius: 10px;
+      display: inline-block;
+      background: linear-gradient(135deg, #ffaa00, #ffcc33);
+      color: #000;
+      padding: 14px 32px;
+      font-size: 1.1em;
+      font-weight: bold;
+      border-radius: 8px;
       text-decoration: none;
-      transition: all 0.3s ease;
-      box-shadow: 0 4px 15px rgba(255, 170, 0, 0.5);
+      box-shadow: 0 4px 10px rgba(255, 170, 0, 0.4);
+      transition: transform 0.2s;
     }
     .download-btn:hover {
-      transform: translateY(-2px);
-      background: linear-gradient(145deg, #ffc94a, #ffd766);
+      transform: translateY(-3px);
+    }
+    .screenshots {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      margin-top: 40px;
+      padding: 0 10px;
+    }
+    .screenshots img {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.6);
     }
     footer {
-      background: #101010;
-      text-align: center;
-      padding: 24px;
-      font-size: 0.95em;
-      color: #888;
-      letter-spacing: 0.5px;
+      margin-top: 40px;
+      font-size: 0.9em;
+      color: #777;
     }
   </style>
 </head>
 <body>
-  <header>
-    <div class="logo">
-      <img src="booyahx-logo.png" alt="BooyahX" />
-      <span>BooyahX</span>
-    </div>
-  </header>  <section class="hero">
-    <div class="hero-content">
-      <h1>Welcome to BooyahX v1.4</h1>
-      <p>Experience a whole new level of Free Fire tournament action with our enhanced performance, smoother interface, and a sleek, premium design. Get ready to play like never before!</p>
-      <a href="https://your-download-link.com" class="download-btn"> Download Now</a>
-    </div>
-  </section>  <footer>
-    <p>© 2025 BooyahX. Built by gamers, for gamers.</p>
+  <img src="booyahx-logo.png" alt="BooyahX Logo" class="logo">
+  <h1>BooyahX v1.4</h1>
+  <p>  ,       !<br>     Free Fire  !</p>
+  <a href="https://your-download-link.com" class="download-btn"> Download Now</a>  <div class="screenshots">
+    <img src="screenshot1.jpg" alt="Screenshot 1">
+    <img src="screenshot2.jpg" alt="Screenshot 2">
+    <img src="screenshot3.jpg" alt="Screenshot 3">
+    <img src="screenshot4.jpg" alt="Screenshot 4">
+  </div>  <footer>
+    © 2025 BooyahX. All rights reserved.
   </footer>
 </body>
 </html>
