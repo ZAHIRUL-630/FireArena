@@ -2,7 +2,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BooyahX - Download</title>
+  <title>BooyahX - Tournament Platform</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <style>
     * {
@@ -50,11 +50,12 @@
     }
     .screenshots {
       display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
+      justify-content: flex-start;
+      flex-wrap: nowrap;
+      overflow-x: auto;
       gap: 16px;
       margin-top: 40px;
-      padding: 0 10px;
+      padding: 10px;
     }
     .screenshots img {
       width: 160px;
@@ -63,6 +64,7 @@
       box-shadow: 0 0 20px rgba(0, 255, 255, 0.2),
                   0 0 40px rgba(255, 65, 108, 0.3);
       transition: box-shadow 0.3s ease, transform 0.3s ease;
+      flex-shrink: 0;
     }
     .screenshots img:hover {
       box-shadow: 0 0 30px rgba(0, 255, 255, 0.3),
@@ -70,16 +72,21 @@
       transform: translateY(-4px);
     }
     footer {
-      margin-top: 40px;
+      margin-top: 60px;
       font-size: 0.9em;
       color: #888;
+    }
+    .contact-info {
+      font-size: 0.95em;
+      margin-bottom: 10px;
+      color: #aaa;
     }
   </style>
 </head>
 <body>
-  <img src="booyahx-logo.png" alt="BooyahX Logo" class="BooyahX.png">
-  <h1>BooyahX v1.4</h1>
-  <p>  ,       !<br>     Free Fire  !</p>
+  <img src="booyahx-logo.png" alt="BooyahX Logo" class="logo">
+  <h1>BooyahX Tournament Platform</h1>
+  <p>Where Gamers Compete and Champions Rise</p>
   <a href="https://your-download-link.com" class="download-btn"> Download Now</a>  <div class="screenshots">
     <img src="ZAHIRUL1.PNG" alt="Screenshot 1">
     <img src="ZAHIRUL2.PNG" alt="Screenshot 2">
@@ -87,6 +94,10 @@
     <img src="ZAHIRUL4.PNG" alt="Screenshot 4">
     <img src="ZAHIRUL5.PNG" alt="Screenshot 5">
   </div>  <footer>
+    <div class="contact-info">
+       jibonmahmud630@gmail.com<br>
+       +8801856591506
+    </div>
     © 2025 BooyahX. All rights reserved.
   </footer>
 </body>
